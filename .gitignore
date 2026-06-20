@@ -1,0 +1,51 @@
+q# 🔹 Virtual Environment
+.venv/
+env/
+venv/
+
+# 🔹 Environment variables
+.env
+
+# 🔹 Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# 🔹 Testing / type checking
+.pytest_cache/
+.mypy_cache/
+
+# 🔹 ML / AI models (VERY IMPORTANT)
+*.pt
+*.pth
+*.onnx
+*.h5
+*.pb
+
+# 🔹 Large files
+*.pdf
+*.zip
+*.tar
+*.gz
+
+# 🔹 Build / binaries
+*.so
+*.dll
+*.exe
+
+# 🔹 Your project folders
+vector_db/
+outputs/
+captures/
+v/uploads/
+
+# 🔹 Node (if used inside v/)
+v/node_modules/
+
+# 🔹 Logs
+*.log
+
+# 🔹 OS files
+.DS_Store
+Thumbs.db
