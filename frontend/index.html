@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Solar Panel Fault Detection</title>
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <section class="card">
+        <h1>Solar Panel Fault Detection</h1>
+        <p class="muted">Upload a solar panel image and get an AI-powered recommendation.</p>
+
+        <div class="grid">
+          <div>
+            <label class="label" for="imageInput">Solar panel image</label>
+            <input id="imageInput" type="file" accept="image/*" />
+
+          <div class="actions">
+            <button id="captureBtn">Capture Image</button>
+            <button id="analyzeBtn" disabled>Analyze Panel</button>
+            <span id="loading" class="loading hidden">Analyzing…</span>
+          </div>
+
+            <div id="error" class="error hidden"></div>
+          </div>
+
+          <div>
+            <div class="preview" id="previewWrap">
+              <img id="preview" alt="Preview" />
+              <div id="previewEmpty" class="preview-empty">No image selected</div>
+            </div>
+          </div>
+        </div>
+
+        <hr />
+
+        <section id="result" class="result hidden">
+          <h2>Analysis Result</h2>
+          <div class="kv">
+            <div class="k">Detected Fault</div>
+            <div class="v" id="faultText">-</div>
+            <div class="k">Confidence</div>
+            <div class="v" id="confidenceText">-</div>
+          </div>
+
+          <div class="section-divider"></div>
+
+          <h3> Gemini AI Recommendation</h3>
+          <p class="section-desc">Detailed analysis and recommended actions based on maintenance procedures:</p>
+          <div id="geminiText" class="gemini-output markdown-content"></div>
+
+          <div class="section-divider"></div>
+
+          <details class="details" open>
+            <summary class="summary-header"> Retrieved Knowledge Base Context</summary>
+            <p class="section-desc">Relevant maintenance SOPs and fault definitions retrieved for this issue:</p>
+            <div id="ragCards" class="rag-cards"></div>
+          </details>
+        </section>
+      </section>
+
+      <footer class="footer">
+        <span class="muted">Backend: FastAPI · ONNX Runtime · Chroma RAG · Gemini</span>
+      </footer>
+    </main>
+
+    <script src="/static/script.js"></script>
+  </body>
+</html>

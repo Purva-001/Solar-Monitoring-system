@@ -1,0 +1,68 @@
+SOLAR PANEL DEFECT KNOWLEDGE BASE (EXAMPLE)
+
+SECTION A: Defect impact (factual)
+
+1) Dusty
+- Description: Surface dust or soiling reduces irradiance reaching cells.
+- Typical impact: Gradual power loss; may trigger performance ratio drop without immediate electrical hazard.
+- Risk notes: Dust accumulation can mask other surface issues; heavy soiling can lead to localized heating under some operating conditions.
+
+2) Bird-drop
+- Description: Bird droppings are opaque and may create small shaded regions.
+- Typical impact: Disproportionate power loss due to mismatch losses; can create localized hotspots in affected cells.
+- Risk notes: Persistent droppings can increase hotspot likelihood compared to uniform dust.
+
+3) Physical-Damage
+- Description: Cracks, shattered glass, frame damage, punctures, or broken encapsulation.
+- Typical impact: Can lead to moisture ingress and insulation degradation; may cause rapid performance decline.
+- Risk notes: May increase electrical safety risk depending on severity and location.
+
+4) Clean
+- Description: Panel surface is clean with no visible soiling, bird droppings, or debris.
+- Typical impact: Normal power output; no performance degradation expected from surface contamination.
+- Risk notes: Clean panels require standard maintenance schedules; no immediate action required.
+
+5) Electrical-damage
+- Description: Damage to electrical components, wiring, connectors, or cell interconnects; may include burn marks or discoloration.
+- Typical impact: Potential risk of circuit interruption, short circuits, or fire hazard; may cause sudden performance loss or safety hazard.
+- Risk notes: Requires immediate electrical isolation and professional assessment; may pose safety risk to technicians.
+
+6) Snow-Covered
+- Description: Panel surface covered with snow, ice, or frost accumulation.
+- Typical impact: Complete or near-complete blockage of light; power output severely reduced during winter/cold conditions.
+- Risk notes: May clear naturally or require supervised removal; risk of thermal shock if warm water used for melting; avalanche risk in high-angle installations.
+
+SECTION B: Company maintenance SOP excerpts (example)
+
+SOP-CLEAN-001 (Routine cleaning)
+- Scope: Scheduled or ad-hoc cleaning of modules to remove dust/soiling and bird droppings.
+- Method: Use deionized water if available; avoid abrasive brushes; clean early morning/evening to reduce thermal stress.
+- Post-check: Confirm no residue remains; visually inspect for cracks or delamination.
+
+SOP-INSPECT-002 (Detailed inspection)
+- Trigger: Any suspected Physical-Damage or repeated Bird-drop alerts on same panel.
+- Method: Visual inspection for cracks, delamination, frame gaps; check connector integrity.
+- Safety: Follow lockout/tagout; use insulated gloves when working near live conductors.
+
+SOP-ISOLATE-003 (Electrical isolation)
+- Trigger: Confirmed Physical-Damage with potential exposure of conductors or compromised insulation.
+- Action (factual): Isolate affected string per site procedure; record string ID and panel location; notify supervisor.
+
+SECTION C: Decision thresholds (example; informational only)
+
+THRESH-DEC-010 (Model confidence usage)
+- If primary confidence is low (e.g., < 0.50), treat prediction as uncertain and prioritize retrieving inspection SOP details.
+- If top-2 scores are close (e.g., difference < 0.10), retrieve SOPs covering both defects for human review.
+
+THRESH-CLEAN-011 (Cleaning criteria)
+- Dusty or Bird-drop predicted with moderate/high confidence: retrieve cleaning SOP and safe cleaning constraints.
+- Repeated Dusty alerts over multiple inspections: retrieve scheduling guidance and cleaning frequency policy.
+
+THRESH-DAMAGE-012 (Damage handling)
+- Physical-Damage predicted: retrieve inspection and isolation SOPs and required documentation steps.
+
+SECTION D: Documentation requirements (example)
+
+DOC-LOG-020
+- Record: panel_id, timestamp, predicted defect, confidence, top-3 predictions, technician notes, actions taken.
+- Attach: photos if available (handled outside this RAG module).

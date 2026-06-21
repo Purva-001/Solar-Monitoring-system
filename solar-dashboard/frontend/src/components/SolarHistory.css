@@ -1,0 +1,11 @@
+.solarHistoryPage {
+  width: 100%;
+}
+
+.solarHistoryHeader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 16px;
+}

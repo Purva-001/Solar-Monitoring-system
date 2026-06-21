@@ -1,0 +1,10 @@
+{
+  "PL01-B02-INV03-STR05-P01": {
+    "panel_id": "PL01-B02-INV03-STR05-P01",
+    "technician": "Kunal",
+    "status": "DONE",
+    "notes": "",
+    "suggested_work": "## Summary\n| Field | Value |\n|-------|-------|\n| **Panel ID** | [object Object] |\n| **Defect** | Dusty |\n| **Confidence** | 93.0% |\n| **Urgency** | 🟡 MEDIUM - Schedule cleaning within 1-2 weeks |\n\n## Maintenance Actions\n*   Schedule panel cleaning within the next 1-2 weeks.\n*   Visually inspect the panel for dust accumulation and any other obvious defects prior to cleaning.\n*   Clean the panel to remove all dust buildup, following standard cleaning constraints.\n*   Avoid working near live conductors during the cleaning process.\n*   Record panel_id, timestamp, predicted defect, confidence, technician notes, and actions taken.\n\n## Safety\n*   Always adhere to site-specific safety procedures.\n*   Wear appropriate Personal Protective Equipment (PPE).\n*   Avoid working near live conductors.\n*   Ensure stable footing and fall protection when working at heights.\n\n## Materials / Tools\n*   Soft brush or non-abrasive sponge.\n*   Clean water (e.g., de-ionized).\n*   Mild, non-abrasive cleaning solution (if needed).\n*   Squeegee or lint-free cloth.\n*   Appropriate access equipment (e.g., ladder, boom lift).\n*   PPE (e.g., gloves, safety glasses).\n\n## Verification\n*   Visually confirm the panel surface is free of dust and debris.\n*   Inspect the panel for any new scratches or damage after cleaning.\n*   If performance remains suboptimal, consider module-level electrical measurements (V, I) using a multimeter/clamp meter.\n*   Record module ID, V_oc, I_sc, irradiance, and temperature if performing electrical checks.\n*   Monitor system performance data to confirm improved energy output post-cleaning.",
+    "updated_at": "2026-02-19T20:45:18.790011"
+  }
+}

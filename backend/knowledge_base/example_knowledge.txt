@@ -1,0 +1,319 @@
+SOLAR PANEL DEFECT KNOWLEDGE BASE (EXAMPLE)
+
+================================================================================
+DEFECT 1: DUSTY - Surface Dust or Soiling
+================================================================================
+
+WHAT THIS FAULT MEANS:
+- Description: Surface dust or soiling reduces irradiance reaching cells.
+- Typical impact: Gradual power loss; may trigger performance ratio drop without immediate electrical hazard.
+- Risk notes: Dust accumulation can mask other surface issues; heavy soiling can lead to localized heating under some operating conditions.
+- Confidence level: If confidence > 0.70, proceed with immediate cleaning.
+
+URGENCY LEVEL:
+- Urgency: LOW to MEDIUM (Non-critical but affects efficiency)
+- Action timeline: Plan cleaning within 1-2 weeks
+- Safety risk: Minimal electrical hazard
+
+IMMEDIATE ACTIONS (FIRST 15-30 MINUTES):
+- First step: Inspect visually to confirm dust extent
+- Safety/PPE: Standard work gloves and eye protection
+- Safety note: Avoid working during peak sun hours to reduce thermal stress
+- Notification: Inform facility manager of cleaning requirement
+- Who to notify: Operations team, maintenance supervisor
+- Safety considerations: Use insulated gloves if working near electrical components
+
+MAINTENANCE PROCEDURE (SOP-aligned):
+- SOP-CLEAN-001 (Routine cleaning)
+- Scope: Scheduled or ad-hoc cleaning of modules to remove dust/soiling
+- Method: Use deionized water if available; avoid abrasive brushes
+- Cleaning method: Spray with water early morning/evening to reduce thermal stress
+- Post-check: Confirm no residue remains; visually inspect for cracks or delamination
+- Tools/materials: Deionized water, soft brushes, protective gloves, eye protection
+- Do-not-do warnings: Do NOT use tap water (mineral deposits); do NOT use abrasive materials
+- Post-action verification: Verify no water streaks; check for new defects
+
+DOCUMENTATION & FOLLOW-UP:
+- Record: panel_id, timestamp, cleaning performed, visual inspection results
+- Photo documentation: Before and after cleaning photos
+- Next inspection: Schedule follow-up in 4 weeks
+
+WHAT INFORMATION IS STILL NEEDED:
+- Specific dust composition (pollen, sand, industrial particulates)
+- Accumulated dust thickness
+- Environmental conditions (weather, air quality)
+
+================================================================================
+DEFECT 2: BIRD-DROP - Bird Droppings
+================================================================================
+
+WHAT THIS FAULT MEANS:
+- Description: Bird droppings are opaque and may create small shaded regions.
+- Typical impact: Disproportionate power loss due to mismatch losses; can create localized hotspots in affected cells.
+- Severity: HIGH (causes significant localized power loss)
+- Risk notes: Persistent droppings can increase hotspot likelihood compared to uniform dust.
+- Hotspot risk: Can reach cell temperatures exceeding 80°C under operating conditions
+
+URGENCY LEVEL:
+- Urgency: MEDIUM to HIGH (Priority cleaning needed)
+- Action timeline: Clean within 3-5 days to prevent hotspot damage
+- Safety risk: Moderate electrical hazard if hotspots develop
+
+IMMEDIATE ACTIONS (FIRST 15-30 MINUTES):
+- First step: Locate and assess bird-drop extent and location
+- Safety/PPE: Gloves, eye protection, respiratory mask if bird-borne disease risk
+- Containment note: Isolate affected panel area if possible to prevent spread
+- Notification: Inform facility manager and health/safety officer
+- Who to notify: Operations team, maintenance supervisor, health officer
+- Safety considerations: Use insulated gloves; avoid skin contact; follow biohazard protocol
+
+MAINTENANCE PROCEDURE (SOP-aligned):
+- SOP-CLEAN-001 (Routine cleaning)
+- Scope: Removal of bird droppings from modules
+- Method: Gentle spraying with deionized water and soft cloth
+- Cleaning sequence: Start from top, work downward to avoid re-soiling
+- Avoid spreading: Use separate cloth for each panel to prevent cross-contamination
+- Post-check: Verify complete removal; inspect for damage from droppings
+- Tools/materials: Deionized water, soft cloths, gloves, disinfectant wipes
+- Do-not-do warnings: Do NOT scrape droppings (may damage glass); do NOT reuse cloths on other panels
+- Post-action verification: Thermal image if available to confirm no hotspots
+
+DOCUMENTATION & FOLLOW-UP:
+- Record: panel_id, timestamp, bird-drop removal, inspection for damage
+- Photo documentation: Before, during, and after cleaning
+- Incident reporting: Report to facilities for bird deterrent assessment
+- Next inspection: Schedule follow-up in 2 weeks
+
+WHAT INFORMATION IS STILL NEEDED:
+- Frequency of bird visitation (isolated incident vs. recurring)
+- Bird deterrent measures already in place
+- Presence of visible cell damage from droppings
+
+================================================================================
+DEFECT 3: PHYSICAL-DAMAGE - Cracks, Breaks, or Frame Damage
+================================================================================
+
+WHAT THIS FAULT MEANS:
+- Description: Cracks, shattered glass, frame damage, punctures, or broken encapsulation.
+- Typical impact: Can lead to moisture ingress and insulation degradation; may cause rapid performance decline.
+- Severity: CRITICAL (Safety and performance risk)
+- Risk notes: May increase electrical safety risk depending on severity and location.
+- Moisture risk: Compromised encapsulation allows water ingress leading to corrosion
+- Electrical hazard: Cracked glass can expose electrical paths and create fire risk
+
+URGENCY LEVEL:
+- Urgency: CRITICAL (Immediate action required)
+- Action timeline: Isolate panel immediately; replacement within 24-48 hours
+- Safety risk: HIGH electrical and physical safety hazard
+
+IMMEDIATE ACTIONS (FIRST 15-30 MINUTES):
+- First step: STOP - Do not touch damaged panel; mark area as hazardous
+- Safety/PPE: Safety glasses, work gloves, insulated gloves for electrical safety
+- Isolation step: Physically isolate affected panel; tape warning labels
+- Notification: Immediately notify facility manager and safety officer
+- Who to notify: Operations team, maintenance supervisor, electrical safety officer, management
+- Safety considerations: CRITICAL - potential electrical shock hazard; treat as live unless confirmed de-energized
+
+MAINTENANCE PROCEDURE (SOP-aligned):
+- SOP-INSPECT-002 (Detailed inspection)
+- Trigger: Any suspected Physical-Damage or repeated alerts
+- Method: Visual inspection for crack propagation, glass exposure, frame integrity
+- Do NOT attempt repair: Physical-damage panels should be replaced
+- SOP-ISOLATE-003 (Electrical isolation)
+- Trigger: Confirmed Physical-Damage with potential exposure of conductors
+- Action: Isolate affected string per site procedure; record string ID and panel location
+- Tools/materials: Warning tape, isolation equipment, replacement panel, PPE
+- Do-not-do warnings: Do NOT attempt to clean or repair; do NOT touch exposed edges
+- Post-action verification: Confirm panel is de-energized before approach
+
+DOCUMENTATION & FOLLOW-UP:
+- Record: panel_id, timestamp, damage type, location, severity, isolation status
+- Photo documentation: Wide-angle and close-up photos of damage
+- Engineering assessment: Document crack length, direction, moisture ingress
+- Replacement order: Create work order for panel replacement
+- Next inspection: Installation inspection after replacement
+
+WHAT INFORMATION IS STILL NEEDED:
+- Exact location of damage (edge, center, under junction box)
+- Cause of damage (impact, manufacturing defect, environmental stress)
+- Whether frame is affected or just glass/encapsulation
+
+================================================================================
+DEFECT 4: ELECTRICAL-DAMAGE - Component or Wiring Damage
+================================================================================
+
+WHAT THIS FAULT MEANS:
+- Description: Damage to electrical components, wiring, connectors, or cell interconnects; may include burn marks or discoloration.
+- Typical impact: Potential risk of circuit interruption, short circuits, or fire hazard; may cause sudden performance loss or safety hazard.
+- Severity: CRITICAL (Fire and electrical hazard)
+- Risk notes: Requires immediate electrical isolation and professional assessment; may pose safety risk to technicians.
+- Fire risk: Burned or discolored components indicate potential overheating or arcing
+- Short circuit risk: Damaged insulation can cause ground faults or phase-to-phase shorts
+
+URGENCY LEVEL:
+- Urgency: CRITICAL (Immediate isolation required)
+- Action timeline: De-energize immediately; professional assessment within 4 hours
+- Safety risk: EXTREME - Fire and electrical shock hazard
+
+IMMEDIATE ACTIONS (FIRST 15-30 MINUTES):
+- First step: IMMEDIATELY stop operation; de-energize the affected string
+- Safety/PPE: Insulated gloves (Class 2), safety glasses, FR clothing if available
+- De-energization: Switch off the affected inverter string before approaching panel
+- Notification: IMMEDIATELY notify facility manager, safety officer, and electrician
+- Who to notify: Operations team, maintenance supervisor, electrical safety officer, fire safety officer
+- Safety considerations: CRITICAL - Do NOT touch panel or wiring; potential for arc flash; treat as energized unless confirmed
+
+MAINTENANCE PROCEDURE (SOP-aligned):
+- SOP-INSPECT-002 (Detailed inspection)
+- Trigger: Confirmed Electrical-Damage alert
+- Method: Thermographic inspection for hot spots; visual inspection for burn marks
+- Insulation testing: Perform insulation resistance test before re-energization
+- SOP-ISOLATE-003 (Electrical isolation)
+- Trigger: Confirmed damage with safety risk
+- Action: Isolate affected string and panel per lockout/tagout procedure
+- Procedure: Follow electrical isolation safety protocol; verify de-energized with multimeter
+- Tools/materials: Insulated tools, multimeter, thermocamera, test equipment, FR PPE
+- Do-not-do warnings: CRITICAL - Do NOT attempt any repair; do NOT re-energize without professional assessment
+- Post-action verification: Insulation resistance testing; thermal imaging verification
+
+DOCUMENTATION & FOLLOW-UP:
+- Record: panel_id, timestamp, damage type, location, de-energization timestamp
+- Photo documentation: Thermal images showing hot spots; photos of burned/discolored areas
+- Electrical testing: Insulation resistance values; continuity test results
+- Professional assessment: Third-party electrician inspection required
+- Incident report: File formal incident/accident report
+- Next step: Panel replacement or repair per professional assessment
+
+WHAT INFORMATION IS STILL NEEDED:
+- Type of damage (burn, discoloration, corrosion, break)
+- Location within panel (junction box, interconnects, edge connectors)
+- Whether damage is internal (interconnects) or external (wiring, connectors)
+
+================================================================================
+DEFECT 5: CLEAN - No Defects Detected
+================================================================================
+
+WHAT THIS FAULT MEANS:
+- Description: Panel surface is clean with no visible soiling, bird droppings, or debris.
+- Typical impact: Normal power output; no performance degradation expected from surface contamination.
+- Status: OPERATIONAL - Panel is functioning optimally
+- Risk notes: Clean panels require standard maintenance schedules; no immediate action required.
+- Efficiency impact: Panel operating at baseline design efficiency for current weather conditions
+
+URGENCY LEVEL:
+- Urgency: NONE - No immediate action required
+- Action timeline: Standard maintenance schedule (quarterly or annual)
+- Safety risk: None from cleanliness perspective
+
+IMMEDIATE ACTIONS (FIRST 15-30 MINUTES):
+- First step: No urgent action required; proceed with normal operations
+- Monitoring note: Continue standard monitoring and inspection schedule
+- Verification: Confirm power output metrics are normal for current conditions
+- Notification: Update inspection log as "Clean - No action required"
+- Who to notify: Facility monitoring system; log inspection result
+- Safety considerations: Standard operational safety protocols apply
+
+MAINTENANCE PROCEDURE (Standard Operation):
+- Scope: Continue regular monitoring and preventive maintenance schedule
+- Method: No cleaning action needed; focus on electrical performance monitoring
+- Monitoring interval: Continue normal SCADA monitoring every 15-30 minutes
+- Post-check: Verify IV curve and power output remain within expected ranges
+- Tools/materials: Monitoring system, SCADA platform, performance analytics
+- Do-not-do warnings: Do NOT neglect other panels; do NOT reduce monitoring frequency
+- Post-action verification: Confirm efficiency ratio meets design specifications
+
+DOCUMENTATION & FOLLOW-UP:
+- Record: panel_id, timestamp, "Clean" status, power output metrics
+- Performance log: Log normal operation efficiency and output
+- Next inspection: Schedule routine inspection per standard interval
+- Trend analysis: Compare against historical clean panel performance
+
+WHAT INFORMATION IS STILL NEEDED:
+- Comparative power output vs. design specifications
+- Weather conditions during inspection
+- Time since last cleaning cycle
+
+================================================================================
+DEFECT 6: SNOW-COVERED - Snow, Ice, or Frost Accumulation
+================================================================================
+
+WHAT THIS FAULT MEANS:
+- Description: Panel surface covered with snow, ice, or frost accumulation.
+- Typical impact: Complete or near-complete blockage of light; power output severely reduced during winter/cold conditions.
+- Severity: HIGH (Temporary but severe power loss)
+- Risk notes: May clear naturally or require supervised removal; risk of thermal shock if warm water used for melting; avalanche risk in high-angle installations.
+- Production impact: 80-100% power loss while covered; 30-50% loss even with partial coverage
+- Duration: May last hours to days depending on weather conditions
+
+URGENCY LEVEL:
+- Urgency: MEDIUM (Temporary but severe degradation)
+- Action timeline: Monitor natural clearing; manual removal if forecast shows extended coverage
+- Safety risk: Moderate to high (avalanche risk on steep roofs; thermal shock hazard)
+
+IMMEDIATE ACTIONS (FIRST 15-30 MINUTES):
+- First step: Monitor weather forecast to predict natural clearing timeline
+- Assessment: Check if melting is naturally occurring or additional accumulation expected
+- Notification: Inform facility manager of power loss; update performance forecast
+- Who to notify: Operations team, weather monitoring system, facility manager
+- Safety note: Do NOT attempt removal during snow/sleet conditions
+- Safety considerations: Winter/cold weather hazards; fall hazard on pitched roofs; avalanche risk
+
+MAINTENANCE PROCEDURE (SOP-aligned):
+- Assessment phase: Check weather forecast for next 24-48 hours
+- Natural clearing: Allow weather-driven melting if temperatures rising
+- Active removal (if needed): SOP-SNOW-004 (Snow removal procedure)
+- Method: Soft bristle broom or low-pressure water spray (late afternoon/early evening)
+- Timing: Only remove during warming conditions to minimize thermal shock risk
+- Removal sequence: Work from top to bottom; allow water to drain
+- Tools/materials: Soft broom, low-pressure sprayer, thermometer, safety rope/harness
+- Do-not-do warnings: CRITICAL - Do NOT use hot water (thermal shock risk); do NOT use pressure washers; do NOT remove on slippery surfaces
+- Precautions: Require safety harness on pitched roofs; avalanche watch on steep installations
+- Post-action verification: Confirm power output returns to baseline after snow removal
+
+DOCUMENTATION & FOLLOW-UP:
+- Record: panel_id, timestamp, snow depth, temperature, action taken
+- Weather data: Temperature trend, forecast duration of snow
+- Removal log: If manually removed, document removal method and time to recovery
+- Next monitoring: Increase monitoring frequency during winter months
+- Trend analysis: Track snow coverage patterns for operational planning
+
+WHAT INFORMATION IS STILL NEEDED:
+- Snow/ice type (wet heavy snow vs. dry powder vs. ice crust)
+- Roof/installation angle (affects removal difficulty and avalanche risk)
+- Weather forecast and temperature trend
+- Historical snow coverage patterns for location
+
+SECTION B: Company maintenance SOP excerpts (example)
+
+SOP-CLEAN-001 (Routine cleaning)
+- Scope: Scheduled or ad-hoc cleaning of modules to remove dust/soiling and bird droppings.
+- Method: Use deionized water if available; avoid abrasive brushes; clean early morning/evening to reduce thermal stress.
+- Post-check: Confirm no residue remains; visually inspect for cracks or delamination.
+
+SOP-INSPECT-002 (Detailed inspection)
+- Trigger: Any suspected Physical-Damage or repeated Bird-drop alerts on same panel.
+- Method: Visual inspection for cracks, delamination, frame gaps; check connector integrity.
+- Safety: Follow lockout/tagout; use insulated gloves when working near live conductors.
+
+SOP-ISOLATE-003 (Electrical isolation)
+- Trigger: Confirmed Physical-Damage with potential exposure of conductors or compromised insulation.
+- Action (factual): Isolate affected string per site procedure; record string ID and panel location; notify supervisor.
+
+SECTION C: Decision thresholds (example; informational only)
+
+THRESH-DEC-010 (Model confidence usage)
+- If primary confidence is low (e.g., < 0.50), treat prediction as uncertain and prioritize retrieving inspection SOP details.
+- If top-2 scores are close (e.g., difference < 0.10), retrieve SOPs covering both defects for human review.
+
+THRESH-CLEAN-011 (Cleaning criteria)
+- Dusty or Bird-drop predicted with moderate/high confidence: retrieve cleaning SOP and safe cleaning constraints.
+- Repeated Dusty alerts over multiple inspections: retrieve scheduling guidance and cleaning frequency policy.
+
+THRESH-DAMAGE-012 (Damage handling)
+- Physical-Damage predicted: retrieve inspection and isolation SOPs and required documentation steps.
+
+SECTION D: Documentation requirements (example)
+
+DOC-LOG-020
+- Record: panel_id, timestamp, predicted defect, confidence, top-3 predictions, technician notes, actions taken.
+- Attach: photos if available (handled outside this RAG module).

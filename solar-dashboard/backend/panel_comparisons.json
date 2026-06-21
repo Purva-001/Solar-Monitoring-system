@@ -1,0 +1,274 @@
+{
+  "PL01-B02-INV03-STR05-P01": {
+    "before": {
+      "panel_id": "PL01-B02-INV03-STR05-P01",
+      "power_before": 13.02,
+      "fault_severity": "Dusty",
+      "deviation_percent": 0.0,
+      "before_image_url": "http://localhost:8000/captures/panel_PL01-B02-INV03-STR05-P01_20260219_204540.jpg",
+      "health_status": "",
+      "health_report": {
+        "status": "analyzed",
+        "analysis_triggered": true,
+        "panel_id": "PL01-B02-INV03-STR05-P01",
+        "timestamp": "2026-02-19T20:45:47.944697",
+        "power_trigger": {
+          "p1_value": 4.34,
+          "p2_value": 4.34,
+          "p3_value": 4.34,
+          "threshold": 5.0,
+          "status": "TRIGGERED",
+          "message": "Power (P1/P2/P3) is below 5.0W"
+        },
+        "image": {
+          "filename": "panel_PL01-B02-INV03-STR05-P01_20260219_204540.jpg",
+          "url": "/captures/panel_PL01-B02-INV03-STR05-P01_20260219_204540.jpg",
+          "timestamp": "20260219_204540"
+        },
+        "defect_analysis": {
+          "defect": "Dusty",
+          "confidence": 0.9295650720596313,
+          "top_predictions": [
+            {
+              "label": "Dusty",
+              "score": 0.9295650720596313
+            },
+            {
+              "label": "Bird-drop",
+              "score": 0.06977446377277374
+            },
+            {
+              "label": "Electrical-damage",
+              "score": 0.0003993457357864827
+            }
+          ]
+        },
+        "knowledge_context": "[CONTEXT 1 | source=example_knowledge.txt | score=0.4333]\nking near live conductors.\n\nSOP-ISOLATE-003 (Electrical isolation)\n- Trigger: Confirmed Physical-Damage with potential exposure of conductors or compromised insulation.\n- Action (factual): Isolate affected string per site procedure; record string ID and panel location; notify supervisor.\n\nSECTION C: Decision thresholds (example; informational only)\n\nTHRESH-DEC-010 (Model confidence usage)\n- If primary confidence is low (e.g., < 0.50), treat prediction as uncertain and prioritize retrieving inspection SOP details.\n- If top-2 scores are close (e.g., difference < 0.10), retrieve SOPs covering both defects for human review.\n\nTHRESH-CLEAN-011 (Cleaning criteria)\n- Dusty or Bird-drop predicted with moderate/high confidence: retrieve cleaning SOP and safe cleaning constraints.\n- Repeated Dusty alerts over multiple inspections: retrieve scheduling guidance and cleaning frequency policy.\n\nTHRESH-DAMAGE-012 (Damage handling)\n- Physical-Damage predicted: retrieve inspection and isolation SOPs and required documentation steps.\n\nSECTION D: Documentation requirements (example)\n\nDOC-LOG-020\n- Record: panel_id, timestamp, predicted defect, confidence, top-3 predictions, technician notes, actions t\n\n---\n\n[CONTEXT 2 | source=Best-Practices-In-Solar-Performance-Monitoring.pdf | score=0.4048]\nwith multiple vendors and eases the development of custom applications. Use of\nopen standards reduces supply-­‐chain risk associated with vendor default or lost\nfavor by allowing for plug-­‐compatible replacement of equipment and services.\nRecommended Best Prac/ce\n• Use open standards for information and data communication throughout the\nplant. The SunSpec Alliance standard information models, combined with\nstandard transport protocols such as Modbus, Ethernet, WiFi, and Zigbee\n(radio) are recommended.\n• Longer term, support information models as deVined in IEC 61850 and/or\nSmart Energy ProVile 2.0. SunSpec standards are harmonized with both of\nthese technologies.\n2.2 Auditability of measurement protocols and procedures\nSince a signiVicant amount of revenue may be tied to solar plant performance, the\ntemptation to overstate production and underreport problems exists. The\npossibility of an independent third-­‐party audit to reveal misreporting greatly\nmitigates such temptation and increases the conVidence of all parties in the integrity\nof the information. Use of a public and open standard increases the level of\ntransparency in that the information is more readily vetted in a standa\n\n---\n\n[CONTEXT 3 | source=2022122719-1.pdf | score=0.3990]\n4. St ring -4 meter and IR V mp : I mp : Irr: T:\nthermometer\n5. St ring- 5 V : I : Irr: T:\nmp mp\n6. St ring -6 V : I : Irr: T:\nmp mp\nRemarks:\n(1) Use separate sheet in case of more than 6 strings\n(2) If unexpected lower voltage is observed in any string, collect module level data as below\n(3) Record your observation\nNote:\nModule level test for V and I to be done if there is major variation of V and I at string\noc sc mp mp\nlevel\n7. M odule -1 Multimeter/ V : I : Irr: T:\noc sc\nclamp meter\n8. M odule -2 V : I : Irr: T:\nIrradiance oc sc\nmeter and IR\n9. M odule -3 V : I : Irr: T:\noc sc\nthermometer\n10. M odule -4 V : I : Irr: T:\noc sc\nRemarks:\n(Write Module ID)\nDraft of Quality Control Manual for Rooftop Solar PV System\nPage 75 of 83\nMeasurement using IV tracer\nSl. Method/\nParameter\nNo Tools to Findings\ns\n. use\n1. St ring -1 V : I : P: Irr: T:\noc sc\n2. St ring -2 V : I : P: Irr: T:\noc sc\n3. St ring -3 Use IV V : I : P: Irr: T:\noc sc\n4. St ring -4 tracer V : I : P: Irr: T:\noc sc\n5. St ring -5 V : I : P: Irr: T:\noc sc\n6. St ring -6 V : I : P: Irr: T:\noc sc\nRemarks:\n(1) Use separate sheet in case of more than 6 strings\n(2) If unexpected lower voltage is observed in any string, collect modu",
+        "health_report": "## Summary\n| Field | Value |\n|:------|:------|\n| **Panel ID** | PL01-B02-INV03-STR05-P01 |\n| **Defect Detected** | Dusty |\n| **Model Confidence** | 93.0% |\n| **Urgency Level** | 🟡 MEDIUM - Schedule cleaning within 1-2 weeks |\n| **Action Required** | Inspect & maintain |\n\n## Root Cause Analysis\n*   **Possible causes**: Environmental accumulation of wind-blown dust and debris.\n*   **Possible causes**: Infrequent cleaning cycles or lack of natural washing from rain.\n*   **Possible causes**: Proximity to agricultural land, construction sites, or unpaved roads.\n\n## Recommendations\n*   Schedule cleaning using deionized water for panel PL01-B02-INV03-STR05-P01.\n*   Perform cleaning during early morning or evening to reduce thermal stress on the panel.\n*   Inspect the panel surface thoroughly for stubborn residue and any potential underlying damage like cracks that could be masked by dust.\n*   If 'Dusty' alerts become recurrent, review the current cleaning frequency policy.",
+        "gemini_error": null,
+        "sensor_data": {
+          "panel_id": "PL01-B02-INV03-STR05-P01",
+          "voltage": {
+            "V1": 16.5,
+            "V2": 16.5,
+            "V3": 16.5
+          },
+          "current": 262.9,
+          "power": {
+            "P1": 4.34,
+            "P2": 4.34,
+            "P3": 4.34
+          },
+          "timestamp": "2026-02-19T20:45:30.459282",
+          "alert": true
+        }
+      },
+      "timestamp": "2026-02-19T20:45:47.946621"
+    },
+    "latest_before_at": "2026-02-19T20:45:47.946621",
+    "latest": {
+      "panel_id": "PL01-B02-INV03-STR05-P01",
+      "power_before": 12.51,
+      "power_after": -13.95,
+      "improvement_percent": -211.5107913669065,
+      "resolution_status": "Escalate",
+      "before_image_url": "http://localhost:8000/captures/panel_PL01-B02-INV03-STR05-P01_20260219_165910.jpg",
+      "after_image_url": "http://localhost:8000/captures/panel_PL01-B02-INV03-STR05-P01_20260219_170500.jpg",
+      "timestamp": "2026-02-19T17:05:11.954111",
+      "before": {
+        "panel_id": "PL01-B02-INV03-STR05-P01",
+        "power_before": 12.51,
+        "fault_severity": "Dusty",
+        "deviation_percent": 0.0,
+        "before_image_url": "http://localhost:8000/captures/panel_PL01-B02-INV03-STR05-P01_20260219_165910.jpg",
+        "health_status": "",
+        "health_report": {
+          "status": "analyzed",
+          "analysis_triggered": true,
+          "panel_id": "PL01-B02-INV03-STR05-P01",
+          "timestamp": "2026-02-19T16:59:15.041632",
+          "power_trigger": {
+            "p1_value": 4.17,
+            "p2_value": 4.17,
+            "p3_value": 4.17,
+            "threshold": 5.0,
+            "status": "TRIGGERED",
+            "message": "Power (P1/P2/P3) is below 5.0W"
+          },
+          "image": {
+            "filename": "panel_PL01-B02-INV03-STR05-P01_20260219_165910.jpg",
+            "url": "/captures/panel_PL01-B02-INV03-STR05-P01_20260219_165910.jpg",
+            "timestamp": "20260219_165910"
+          },
+          "defect_analysis": {
+            "defect": "Dusty",
+            "confidence": 0.9295650720596313,
+            "top_predictions": [
+              {
+                "label": "Dusty",
+                "score": 0.9295650720596313
+              },
+              {
+                "label": "Bird-drop",
+                "score": 0.06977446377277374
+              },
+              {
+                "label": "Electrical-damage",
+                "score": 0.0003993457357864827
+              }
+            ]
+          },
+          "knowledge_context": "[CONTEXT 1 | source=example_knowledge.txt | score=0.4333]\nking near live conductors.\n\nSOP-ISOLATE-003 (Electrical isolation)\n- Trigger: Confirmed Physical-Damage with potential exposure of conductors or compromised insulation.\n- Action (factual): Isolate affected string per site procedure; record string ID and panel location; notify supervisor.\n\nSECTION C: Decision thresholds (example; informational only)\n\nTHRESH-DEC-010 (Model confidence usage)\n- If primary confidence is low (e.g., < 0.50), treat prediction as uncertain and prioritize retrieving inspection SOP details.\n- If top-2 scores are close (e.g., difference < 0.10), retrieve SOPs covering both defects for human review.\n\nTHRESH-CLEAN-011 (Cleaning criteria)\n- Dusty or Bird-drop predicted with moderate/high confidence: retrieve cleaning SOP and safe cleaning constraints.\n- Repeated Dusty alerts over multiple inspections: retrieve scheduling guidance and cleaning frequency policy.\n\nTHRESH-DAMAGE-012 (Damage handling)\n- Physical-Damage predicted: retrieve inspection and isolation SOPs and required documentation steps.\n\nSECTION D: Documentation requirements (example)\n\nDOC-LOG-020\n- Record: panel_id, timestamp, predicted defect, confidence, top-3 predictions, technician notes, actions t\n\n---\n\n[CONTEXT 2 | source=Best-Practices-In-Solar-Performance-Monitoring.pdf | score=0.4048]\nwith multiple vendors and eases the development of custom applications. Use of\nopen standards reduces supply-­‐chain risk associated with vendor default or lost\nfavor by allowing for plug-­‐compatible replacement of equipment and services.\nRecommended Best Prac/ce\n• Use open standards for information and data communication throughout the\nplant. The SunSpec Alliance standard information models, combined with\nstandard transport protocols such as Modbus, Ethernet, WiFi, and Zigbee\n(radio) are recommended.\n• Longer term, support information models as deVined in IEC 61850 and/or\nSmart Energy ProVile 2.0. SunSpec standards are harmonized with both of\nthese technologies.\n2.2 Auditability of measurement protocols and procedures\nSince a signiVicant amount of revenue may be tied to solar plant performance, the\ntemptation to overstate production and underreport problems exists. The\npossibility of an independent third-­‐party audit to reveal misreporting greatly\nmitigates such temptation and increases the conVidence of all parties in the integrity\nof the information. Use of a public and open standard increases the level of\ntransparency in that the information is more readily vetted in a standa\n\n---\n\n[CONTEXT 3 | source=2022122719-1.pdf | score=0.3990]\n4. St ring -4 meter and IR V mp : I mp : Irr: T:\nthermometer\n5. St ring- 5 V : I : Irr: T:\nmp mp\n6. St ring -6 V : I : Irr: T:\nmp mp\nRemarks:\n(1) Use separate sheet in case of more than 6 strings\n(2) If unexpected lower voltage is observed in any string, collect module level data as below\n(3) Record your observation\nNote:\nModule level test for V and I to be done if there is major variation of V and I at string\noc sc mp mp\nlevel\n7. M odule -1 Multimeter/ V : I : Irr: T:\noc sc\nclamp meter\n8. M odule -2 V : I : Irr: T:\nIrradiance oc sc\nmeter and IR\n9. M odule -3 V : I : Irr: T:\noc sc\nthermometer\n10. M odule -4 V : I : Irr: T:\noc sc\nRemarks:\n(Write Module ID)\nDraft of Quality Control Manual for Rooftop Solar PV System\nPage 75 of 83\nMeasurement using IV tracer\nSl. Method/\nParameter\nNo Tools to Findings\ns\n. use\n1. St ring -1 V : I : P: Irr: T:\noc sc\n2. St ring -2 V : I : P: Irr: T:\noc sc\n3. St ring -3 Use IV V : I : P: Irr: T:\noc sc\n4. St ring -4 tracer V : I : P: Irr: T:\noc sc\n5. St ring -5 V : I : P: Irr: T:\noc sc\n6. St ring -6 V : I : P: Irr: T:\noc sc\nRemarks:\n(1) Use separate sheet in case of more than 6 strings\n(2) If unexpected lower voltage is observed in any string, collect modu",
+          "health_report": "## Summary\n| Field | Value |\n|-------|-------|\n| **Panel ID** | PL01-B02-INV03-STR05-P01 |\n| **Defect Detected** | Dusty |\n| **Model Confidence** | 93.0% |\n| **Urgency Level** | 🟡 MEDIUM - Schedule cleaning within 1-2 weeks |\n| **Action Required** | Inspect & maintain |\n\n## Root Cause Analysis\n*   Accumulation of environmental dust on the panel surface.\n*   Lack of recent or regular cleaning, leading to progressive soiling.\n*   Local environmental factors contributing to dust deposition.\n\n## Recommendations\n*   Schedule a cleaning operation for the affected panel(s) within 1-2 weeks.\n*   Clean the panel using deionized water during early morning or evening hours to minimize thermal stress.\n*   During cleaning, verify surface cleanliness and check for any underlying residue or masked cracks.\n*   Log the cleaning action, panel ID, and any observations.\n*   Monitor performance post-cleaning and include in routine maintenance checks.",
+          "gemini_error": null,
+          "sensor_data": {
+            "panel_id": "PL01-B02-INV03-STR05-P01",
+            "voltage": {
+              "V1": 16.5,
+              "V2": 16.5,
+              "V3": 16.5
+            },
+            "current": 252.7,
+            "power": {
+              "P1": 4.17,
+              "P2": 4.17,
+              "P3": 4.17
+            },
+            "timestamp": "2026-02-19T16:59:00.134031",
+            "alert": true
+          }
+        },
+        "timestamp": "2026-02-19T16:59:15.041632"
+      },
+      "after": {
+        "panel_id": "PL01-B02-INV03-STR05-P01",
+        "power_after": -13.95,
+        "deviation_percent": 47.78200253485425,
+        "after_image_url": "http://localhost:8000/captures/panel_PL01-B02-INV03-STR05-P01_20260219_170500.jpg",
+        "health_status": "",
+        "health_report": {
+          "status": "analyzed",
+          "analysis_triggered": true,
+          "panel_id": "PL01-B02-INV03-STR05-P01",
+          "timestamp": "2026-02-19T17:05:11.949786",
+          "power_trigger": {
+            "p1_value": -2.89,
+            "p2_value": -3.35,
+            "p3_value": -7.71,
+            "threshold": 5.0,
+            "status": "TRIGGERED",
+            "message": "Power (P1/P2/P3) is below 5.0W"
+          },
+          "image": {
+            "filename": "panel_PL01-B02-INV03-STR05-P01_20260219_170500.jpg",
+            "url": "/captures/panel_PL01-B02-INV03-STR05-P01_20260219_170500.jpg",
+            "timestamp": "20260219_170500"
+          },
+          "defect_analysis": {
+            "defect": "Dusty",
+            "confidence": 0.9295650720596313,
+            "top_predictions": [
+              {
+                "label": "Dusty",
+                "score": 0.9295650720596313
+              },
+              {
+                "label": "Bird-drop",
+                "score": 0.06977446377277374
+              },
+              {
+                "label": "Electrical-damage",
+                "score": 0.0003993457357864827
+              }
+            ]
+          },
+          "knowledge_context": "[CONTEXT 1 | source=example_knowledge.txt | score=0.4333]\nking near live conductors.\n\nSOP-ISOLATE-003 (Electrical isolation)\n- Trigger: Confirmed Physical-Damage with potential exposure of conductors or compromised insulation.\n- Action (factual): Isolate affected string per site procedure; record string ID and panel location; notify supervisor.\n\nSECTION C: Decision thresholds (example; informational only)\n\nTHRESH-DEC-010 (Model confidence usage)\n- If primary confidence is low (e.g., < 0.50), treat prediction as uncertain and prioritize retrieving inspection SOP details.\n- If top-2 scores are close (e.g., difference < 0.10), retrieve SOPs covering both defects for human review.\n\nTHRESH-CLEAN-011 (Cleaning criteria)\n- Dusty or Bird-drop predicted with moderate/high confidence: retrieve cleaning SOP and safe cleaning constraints.\n- Repeated Dusty alerts over multiple inspections: retrieve scheduling guidance and cleaning frequency policy.\n\nTHRESH-DAMAGE-012 (Damage handling)\n- Physical-Damage predicted: retrieve inspection and isolation SOPs and required documentation steps.\n\nSECTION D: Documentation requirements (example)\n\nDOC-LOG-020\n- Record: panel_id, timestamp, predicted defect, confidence, top-3 predictions, technician notes, actions t\n\n---\n\n[CONTEXT 2 | source=Best-Practices-In-Solar-Performance-Monitoring.pdf | score=0.4048]\nwith multiple vendors and eases the development of custom applications. Use of\nopen standards reduces supply-­‐chain risk associated with vendor default or lost\nfavor by allowing for plug-­‐compatible replacement of equipment and services.\nRecommended Best Prac/ce\n• Use open standards for information and data communication throughout the\nplant. The SunSpec Alliance standard information models, combined with\nstandard transport protocols such as Modbus, Ethernet, WiFi, and Zigbee\n(radio) are recommended.\n• Longer term, support information models as deVined in IEC 61850 and/or\nSmart Energy ProVile 2.0. SunSpec standards are harmonized with both of\nthese technologies.\n2.2 Auditability of measurement protocols and procedures\nSince a signiVicant amount of revenue may be tied to solar plant performance, the\ntemptation to overstate production and underreport problems exists. The\npossibility of an independent third-­‐party audit to reveal misreporting greatly\nmitigates such temptation and increases the conVidence of all parties in the integrity\nof the information. Use of a public and open standard increases the level of\ntransparency in that the information is more readily vetted in a standa\n\n---\n\n[CONTEXT 3 | source=2022122719-1.pdf | score=0.3990]\n4. St ring -4 meter and IR V mp : I mp : Irr: T:\nthermometer\n5. St ring- 5 V : I : Irr: T:\nmp mp\n6. St ring -6 V : I : Irr: T:\nmp mp\nRemarks:\n(1) Use separate sheet in case of more than 6 strings\n(2) If unexpected lower voltage is observed in any string, collect module level data as below\n(3) Record your observation\nNote:\nModule level test for V and I to be done if there is major variation of V and I at string\noc sc mp mp\nlevel\n7. M odule -1 Multimeter/ V : I : Irr: T:\noc sc\nclamp meter\n8. M odule -2 V : I : Irr: T:\nIrradiance oc sc\nmeter and IR\n9. M odule -3 V : I : Irr: T:\noc sc\nthermometer\n10. M odule -4 V : I : Irr: T:\noc sc\nRemarks:\n(Write Module ID)\nDraft of Quality Control Manual for Rooftop Solar PV System\nPage 75 of 83\nMeasurement using IV tracer\nSl. Method/\nParameter\nNo Tools to Findings\ns\n. use\n1. St ring -1 V : I : P: Irr: T:\noc sc\n2. St ring -2 V : I : P: Irr: T:\noc sc\n3. St ring -3 Use IV V : I : P: Irr: T:\noc sc\n4. St ring -4 tracer V : I : P: Irr: T:\noc sc\n5. St ring -5 V : I : P: Irr: T:\noc sc\n6. St ring -6 V : I : P: Irr: T:\noc sc\nRemarks:\n(1) Use separate sheet in case of more than 6 strings\n(2) If unexpected lower voltage is observed in any string, collect modu",
+          "health_report": "## Summary\n| Field | Value |\n|-------|-------|\n| **Panel ID** | PL01-B02-INV03-STR05-P01 |\n| **Defect Detected** | Dusty |\n| **Model Confidence** | 93.0% |\n| **Urgency Level** | 🟡 MEDIUM - Schedule cleaning within 1-2 weeks |\n| **Action Required** | Inspect & maintain |\n\n## Root Cause Analysis\n*   Environmental accumulation of dust and particulate matter.\n*   Possible causes: Infrequent cleaning cycles or localized environmental factors (e.g., nearby construction, agricultural activity).\n\n## Recommendations\n*   Schedule cleaning of the identified panel (PL01-B02-INV03-STR05-P01) within 1-2 weeks.\n*   Perform cleaning using deionized water during early morning or evening hours to minimize thermal stress.\n*   Thoroughly inspect the panel surface for any residues after cleaning.\n*   Check for any underlying cracks or physical damage that may have been obscured by dust accumulation.\n*   Record the panel ID, predicted defect, confidence, technician notes, and all actions taken.\n*   Monitor for recurrence and adjust cleaning frequency if repeated 'Dusty' alerts occur over multiple inspections.",
+          "gemini_error": null,
+          "sensor_data": {
+            "panel_id": "PL01-B02-INV03-STR05-P01",
+            "voltage": {
+              "V1": 6.18,
+              "V2": 7.17,
+              "V3": 16.5
+            },
+            "current": 323.0,
+            "power": {
+              "P1": -2.89,
+              "P2": -3.35,
+              "P3": -7.71
+            },
+            "timestamp": "2026-02-19T17:04:50.258821",
+            "alert": false
+          }
+        },
+        "timestamp": "2026-02-19T17:05:11.954111"
+      }
+    },
+    "after": {
+      "panel_id": "PL01-B02-INV03-STR05-P01",
+      "power_after": -13.95,
+      "deviation_percent": 47.78200253485425,
+      "after_image_url": "http://localhost:8000/captures/panel_PL01-B02-INV03-STR05-P01_20260219_170500.jpg",
+      "health_status": "",
+      "health_report": {
+        "status": "analyzed",
+        "analysis_triggered": true,
+        "panel_id": "PL01-B02-INV03-STR05-P01",
+        "timestamp": "2026-02-19T17:05:11.949786",
+        "power_trigger": {
+          "p1_value": -2.89,
+          "p2_value": -3.35,
+          "p3_value": -7.71,
+          "threshold": 5.0,
+          "status": "TRIGGERED",
+          "message": "Power (P1/P2/P3) is below 5.0W"
+        },
+        "image": {
+          "filename": "panel_PL01-B02-INV03-STR05-P01_20260219_170500.jpg",
+          "url": "/captures/panel_PL01-B02-INV03-STR05-P01_20260219_170500.jpg",
+          "timestamp": "20260219_170500"
+        },
+        "defect_analysis": {
+          "defect": "Dusty",
+          "confidence": 0.9295650720596313,
+          "top_predictions": [
+            {
+              "label": "Dusty",
+              "score": 0.9295650720596313
+            },
+            {
+              "label": "Bird-drop",
+              "score": 0.06977446377277374
+            },
+            {
+              "label": "Electrical-damage",
+              "score": 0.0003993457357864827
+            }
+          ]
+        },
+        "knowledge_context": "[CONTEXT 1 | source=example_knowledge.txt | score=0.4333]\nking near live conductors.\n\nSOP-ISOLATE-003 (Electrical isolation)\n- Trigger: Confirmed Physical-Damage with potential exposure of conductors or compromised insulation.\n- Action (factual): Isolate affected string per site procedure; record string ID and panel location; notify supervisor.\n\nSECTION C: Decision thresholds (example; informational only)\n\nTHRESH-DEC-010 (Model confidence usage)\n- If primary confidence is low (e.g., < 0.50), treat prediction as uncertain and prioritize retrieving inspection SOP details.\n- If top-2 scores are close (e.g., difference < 0.10), retrieve SOPs covering both defects for human review.\n\nTHRESH-CLEAN-011 (Cleaning criteria)\n- Dusty or Bird-drop predicted with moderate/high confidence: retrieve cleaning SOP and safe cleaning constraints.\n- Repeated Dusty alerts over multiple inspections: retrieve scheduling guidance and cleaning frequency policy.\n\nTHRESH-DAMAGE-012 (Damage handling)\n- Physical-Damage predicted: retrieve inspection and isolation SOPs and required documentation steps.\n\nSECTION D: Documentation requirements (example)\n\nDOC-LOG-020\n- Record: panel_id, timestamp, predicted defect, confidence, top-3 predictions, technician notes, actions t\n\n---\n\n[CONTEXT 2 | source=Best-Practices-In-Solar-Performance-Monitoring.pdf | score=0.4048]\nwith multiple vendors and eases the development of custom applications. Use of\nopen standards reduces supply-­‐chain risk associated with vendor default or lost\nfavor by allowing for plug-­‐compatible replacement of equipment and services.\nRecommended Best Prac/ce\n• Use open standards for information and data communication throughout the\nplant. The SunSpec Alliance standard information models, combined with\nstandard transport protocols such as Modbus, Ethernet, WiFi, and Zigbee\n(radio) are recommended.\n• Longer term, support information models as deVined in IEC 61850 and/or\nSmart Energy ProVile 2.0. SunSpec standards are harmonized with both of\nthese technologies.\n2.2 Auditability of measurement protocols and procedures\nSince a signiVicant amount of revenue may be tied to solar plant performance, the\ntemptation to overstate production and underreport problems exists. The\npossibility of an independent third-­‐party audit to reveal misreporting greatly\nmitigates such temptation and increases the conVidence of all parties in the integrity\nof the information. Use of a public and open standard increases the level of\ntransparency in that the information is more readily vetted in a standa\n\n---\n\n[CONTEXT 3 | source=2022122719-1.pdf | score=0.3990]\n4. St ring -4 meter and IR V mp : I mp : Irr: T:\nthermometer\n5. St ring- 5 V : I : Irr: T:\nmp mp\n6. St ring -6 V : I : Irr: T:\nmp mp\nRemarks:\n(1) Use separate sheet in case of more than 6 strings\n(2) If unexpected lower voltage is observed in any string, collect module level data as below\n(3) Record your observation\nNote:\nModule level test for V and I to be done if there is major variation of V and I at string\noc sc mp mp\nlevel\n7. M odule -1 Multimeter/ V : I : Irr: T:\noc sc\nclamp meter\n8. M odule -2 V : I : Irr: T:\nIrradiance oc sc\nmeter and IR\n9. M odule -3 V : I : Irr: T:\noc sc\nthermometer\n10. M odule -4 V : I : Irr: T:\noc sc\nRemarks:\n(Write Module ID)\nDraft of Quality Control Manual for Rooftop Solar PV System\nPage 75 of 83\nMeasurement using IV tracer\nSl. Method/\nParameter\nNo Tools to Findings\ns\n. use\n1. St ring -1 V : I : P: Irr: T:\noc sc\n2. St ring -2 V : I : P: Irr: T:\noc sc\n3. St ring -3 Use IV V : I : P: Irr: T:\noc sc\n4. St ring -4 tracer V : I : P: Irr: T:\noc sc\n5. St ring -5 V : I : P: Irr: T:\noc sc\n6. St ring -6 V : I : P: Irr: T:\noc sc\nRemarks:\n(1) Use separate sheet in case of more than 6 strings\n(2) If unexpected lower voltage is observed in any string, collect modu",
+        "health_report": "## Summary\n| Field | Value |\n|-------|-------|\n| **Panel ID** | PL01-B02-INV03-STR05-P01 |\n| **Defect Detected** | Dusty |\n| **Model Confidence** | 93.0% |\n| **Urgency Level** | 🟡 MEDIUM - Schedule cleaning within 1-2 weeks |\n| **Action Required** | Inspect & maintain |\n\n## Root Cause Analysis\n*   Environmental accumulation of dust and particulate matter.\n*   Possible causes: Infrequent cleaning cycles or localized environmental factors (e.g., nearby construction, agricultural activity).\n\n## Recommendations\n*   Schedule cleaning of the identified panel (PL01-B02-INV03-STR05-P01) within 1-2 weeks.\n*   Perform cleaning using deionized water during early morning or evening hours to minimize thermal stress.\n*   Thoroughly inspect the panel surface for any residues after cleaning.\n*   Check for any underlying cracks or physical damage that may have been obscured by dust accumulation.\n*   Record the panel ID, predicted defect, confidence, technician notes, and all actions taken.\n*   Monitor for recurrence and adjust cleaning frequency if repeated 'Dusty' alerts occur over multiple inspections.",
+        "gemini_error": null,
+        "sensor_data": {
+          "panel_id": "PL01-B02-INV03-STR05-P01",
+          "voltage": {
+            "V1": 6.18,
+            "V2": 7.17,
+            "V3": 16.5
+          },
+          "current": 323.0,
+          "power": {
+            "P1": -2.89,
+            "P2": -3.35,
+            "P3": -7.71
+          },
+          "timestamp": "2026-02-19T17:04:50.258821",
+          "alert": false
+        }
+      },
+      "timestamp": "2026-02-19T17:05:11.954111"
+    },
+    "updated_at": "2026-02-19T17:05:11.954111"
+  }
+}

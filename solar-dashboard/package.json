@@ -1,0 +1,23 @@
+{
+  "name": "solar-panel-dashboard",
+  "version": "1.0.0",
+  "description": "Solar Panel Health Report Dashboard with AI Defect Detection",
+  "scripts": {
+    "dev": "cd frontend && npm start",
+    "build": "cd frontend && npm run build",
+    "install-frontend": "cd frontend && npm install",
+    "install-backend": "cd backend && pip install -r requirements.txt",
+    "backend": "cd backend && python app.py"
+  },
+  "keywords": [
+    "solar",
+    "dashboard",
+    "ai",
+    "defect-detection"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "recharts": "^3.6.0"
+  }
+}
